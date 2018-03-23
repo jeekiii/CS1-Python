@@ -1,0 +1,37 @@
+accessible: true
+author: Tanguy De Bels
+context: |-
+    `Anonymous <https://en.wikipedia.org/wiki/Anonymous_(group)>`_ was dazzled by your work and decided to entrust you with the analysis of the whole bunch of data they intercepted.
+
+    With the help of the  two functions you already designed, you will transform each line of the data into a pattern and extract the number of occurence it can be found in the file.
+
+    Create a function ``collect(data)`` to read the file extract the patterns and store them in a dictionary with their occurrences.
+
+    In case of error, just return a string with the name of the error.
+
+    *Reminder*:
+
+    - ``extract(code)``: gives the nature of each element of a string.
+
+    - ``treatment(code)``: transform a suite of elements into a pattern.
+environment: default
+evaluate: best
+groups: false
+limits:
+    output: '2'
+    memory: '100'
+    time: '30'
+name: 'Session 7: Anonymous - Information collection'
+network_grading: false
+order: 20
+problems:
+    q1:
+        language: python
+        type: code
+        header: Implement the function ``collect(file)`` in Python.
+        name: Implementation
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

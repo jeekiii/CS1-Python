@@ -1,0 +1,33 @@
+accessible: true
+author: Tanguy De Bels
+context: The method ``average(list)`` returns the arithmetic mean of the elements
+    contained in list, except if ``list`` is empty in which case it should return
+    ``None``.
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    time: '30'
+    output: '2'
+    memory: '100'
+name: 'Session 4: Average'
+network_grading: false
+order: 14
+problems:
+    q1:
+        type: code
+        header: |-
+            Provide the body of the following method:
+
+            .. code-block:: python
+
+                def average(list):
+        language: python
+        name: Implementation
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0

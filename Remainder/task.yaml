@@ -1,0 +1,37 @@
+accessible: true
+author: Tanguy De Bels
+context: |-
+    Suppose the variables ``a`` and ``b`` contain a natural number.
+
+    Write a code fragment that assigns the remainder of their division in the variable ``rest``.
+
+    To implement your solution, use only a ``while`` loop and subtractions (the simple solution rest = a % b is not allowed; we want to test if you are capable of implementing such an operation yourself).
+
+    Note that you should not allow division by 0 and assign the value ``None`` to ``rest`` if this would occur.
+environment: default
+evaluate: best
+groups: false
+limits:
+    output: '2'
+    memory: '100'
+    time: '30'
+name: 'Session 2: Remainder of an integer division'
+network_grading: false
+order: 5
+problems:
+    q1:
+        language: python
+        header: |-
+            .. code-block:: python
+
+                a = ... #variable to evaluate
+                b = ... #variable to evaluate
+                rest = ... #store in this variable the remainder of the division a/b
+        name: Implementation
+        type: code
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0

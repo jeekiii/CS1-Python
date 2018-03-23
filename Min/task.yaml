@@ -1,0 +1,33 @@
+accessible: true
+author: Tanguy De Bels
+context: |-
+    Suppose the variables ``a``, ``b`` and ``c`` contain a natural number.
+
+    Write a code fragment that assigns to the variable ``min`` the smallest of these numbers.
+environment: default
+evaluate: best
+groups: false
+limits:
+    output: '2'
+    memory: '100'
+    time: '30'
+name: 'Session 2: Minimum'
+network_grading: false
+order: 2
+problems:
+    q1:
+        language: python
+        type: code
+        header: |-
+            .. code-block:: python
+
+                a = ... #variable to evaluate
+                b = ... #variable to evaluate
+                c = ... #variable to evaluate
+                minima = ... #store in this variable the smallest of the three variables
+        name: Implementation
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

@@ -1,0 +1,40 @@
+accessible: true
+author: Tanguy De Bels
+context: |-
+    In mathematics, the `Fibonacci series <https://en.wikipedia.org/wiki/Fibonacci_number>`_ are the numbers in the following sequence of integers, which are characterized by the fact that every number after the first two is the sum of the two preceding ones:
+
+    Example: :math:`0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...`
+
+    A very simple algorithm would be:
+    $$\\text{F}_0 = 0$$
+    $$\\text{F}_1 = 1$$
+    $$\\text{F}_n = \\text{F}_{n-1} + \\text{F}_{n-2}$$
+
+    Adapt the function which you implemented in session 3 to create a recursive solution to this exercise. You should also return ``None`` in the case of an incongruous input.
+environment: default
+evaluate: best
+groups: false
+limits:
+    time: '30'
+    memory: '100'
+    output: '2'
+name: 'Session 8: Fibonacci'
+network_grading: false
+order: 24
+problems:
+    q1:
+        header: |-
+            Provide the body of the following method:
+
+            .. code-block:: python
+
+                def fibo(x):
+        language: python
+        name: Implementation
+        type: code
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0

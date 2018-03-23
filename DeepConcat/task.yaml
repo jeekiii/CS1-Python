@@ -1,0 +1,34 @@
+accessible: true
+author: Tanguy De Bels
+context: |-
+    Suppose we have a multi-level depth list of which the elements are all strings.
+
+    *Example*: ["a",["b","6"],"e",["5",["g","h"]],"i"]
+
+    Create a function deepconcat(l) that traverses this structure and creates a new string which is the concatenation of all the strings appearing in that structure.
+
+    *Example*:
+    deepconcat(["a",["b","6"],"e",["5",["g","h"]],"i"])
+    => returns "ab6de5ghi"
+environment: default
+evaluate: best
+groups: false
+limits:
+    time: '30'
+    memory: '100'
+    output: '2'
+name: 'Session 8: Deep concatenation'
+network_grading: false
+order: 26
+problems:
+    q1:
+        header: Implement the function ``deep_concat(l)`` in Python.
+        language: python
+        name: Implementation
+        type: code
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0

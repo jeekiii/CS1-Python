@@ -1,0 +1,37 @@
+accessible: true
+author: Tanguy De Bels
+context: |-
+    The method ``sum(list)`` returns the sum of the elements contained in ``list``.
+
+    Example: the sum of :math:`[1, 2, 3]` is :math:`6`
+
+    Note that your algorithm should be able to compute the sum even
+    when the list ``list`` contains malicious elements (not numbers).
+environment: java7
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    time: '30'
+    output: '2'
+    memory: '100'
+name: 'Session 4: Sum'
+network_grading: false
+order: 13
+problems:
+    q1:
+        type: code
+        header: |-
+            Provide the body of the following method:
+
+            .. code-block:: python
+
+                def sum(list):
+        language: python
+        name: Implementation
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0

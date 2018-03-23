@@ -1,0 +1,42 @@
+accessible: true
+author: Tanguy De Bels
+context: |-
+    `Anonymous <https://en.wikipedia.org/wiki/Anonymous_(group)>`_ just hired you on the dark web for a dangerous task. They've been trying to crack a code for a few days but didn't achieve anything... yet!
+
+    They want you to build a function that will analyze each character in a given code and determine its nature. The goal is simple, they intend to use the information you will provide to look for a pattern in the code.
+
+    Create a function ``extract(code)`` to provide information regarding the nature of each element of the code:
+
+    For example, when given the code ``'AeB7'`` as input the function should produce ``'vowel-up vowel-low consonant-up number'`` as output. In general :
+
+    * Add ``number`` to the answer if the element of the code is a digit.
+    * Add ``vowel`` to the answer if the element of the code is a vowel.
+    * Add ``consonant`` to the answer if the element of the code is a consonant.
+    * Follow it by ``-up`` if the vowel or consonant is in upper case.
+    * Follow it by ``-low`` if the vowel or consonant is in lower case.
+
+    *Example*:
+
+    With the code ``'AeB7'`` the function would output 'vowel-up vowel-low consonant-up number'
+environment: default
+evaluate: best
+groups: false
+limits:
+    output: '2'
+    memory: '100'
+    time: '30'
+name: 'Session 4: Anonymous - Information extraction'
+network_grading: false
+order: 17
+problems:
+    q1:
+        language: python
+        header: Implement the function ``extract(code)`` in Python.
+        name: Implementation
+        type: code
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0

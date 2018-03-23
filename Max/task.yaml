@@ -1,0 +1,27 @@
+accessible: true
+author: Tanguy De Bels
+context: |-
+    The method ``maximum(lst)`` returns the maximum of the elements contained in the list ``lst``.
+
+    The value ``None`` is returned if the list ``lst`` is empty.
+environment: default
+evaluate: best
+groups: false
+limits:
+    memory: '100'
+    output: '2'
+    time: '30'
+name: 'Session 4: Maximum'
+network_grading: false
+order: 12
+problems:
+    q1:
+        type: code
+        name: Implementation
+        header: Implement the function ``maximum(lst)`` in Python.
+        language: python
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

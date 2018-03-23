@@ -1,0 +1,39 @@
+accessible: true
+author: Tanguy De Bels
+context: |-
+    The police is hiring you to develop a program to calculate the fine that a car driver will have to pay in the event of a violation. The law stipulates that the driver will have to pay 5 euros per km/h above the maximum authorized speed, with a minimum fine of 12.5€.
+
+    For any speeding of more than 10 km/h above the authorized speed, the fine is doubled!
+
+    Your program takes as input the maximum allowed speed and the actual speed of the car. It calculates the possible fine.
+
+    *Example*:
+
+    - If the maximum speed is 50km/h and the vehicle is traveling at 62km/h, the penalty will be 12 * 5 * 2 = 120€.
+
+    - If the maximum speed is 50km/h and the vehicle is traveling at 56km/h, the penalty will be 6 * 5 = 30€.
+
+    - If the maximum speed is 50km/h and the vehicle is traveling at 51km/h, the fine will be 12.5€.
+environment: default
+evaluate: best
+groups: false
+limits:
+    output: '2'
+    memory: '100'
+    time: '30'
+name: 'Session 3: Speeding fine'
+network_grading: false
+order: 11
+problems:
+    q1:
+        language: python
+        header: Implement the function ``fine(authorized_speed, actual_speed)`` in
+            Python.
+        name: Implementation
+        type: code
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0

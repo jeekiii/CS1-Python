@@ -1,0 +1,33 @@
+accessible: true
+author: Tanguy De Bels
+context: |-
+    In computer science, a sorting algorithm is an algorithm that puts the elements of a list in a certain order. The most-used orders are numerical order and lexicographical order. Efficient sorting is important for optimizing the use of other algorithms (such as search and merge algorithms) which require input data to be in sorted lists; it is also often useful for canonicalizing data and for producing human-readable output. More formally, the output must satisfy two conditions:
+
+    * The output is in nondecreasing order (each element is no smaller than the previous element according to the desired total order);
+    * The output is a permutation (reordering but with all of the original elements) of the input.
+environment: default
+evaluate: best
+groups: false
+limits:
+    time: '30'
+    memory: '100'
+    output: '2'
+name: 'Session 5: List sorting'
+network_grading: false
+order: 19
+problems:
+    q1:
+        header: |-
+            .. code-block:: python
+
+                a_list = ... #list to sort
+                sorted_list = ... #store in this variable the sorted version of the list
+        language: python
+        name: Implementation
+        type: code
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0

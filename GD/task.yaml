@@ -1,0 +1,34 @@
+accessible: true
+author: Tanguy De Bels
+context: |-
+    The Greatest Divisor of a number ``a`` is the biggest number ( except ``a`` itself) such that the division of ``a`` by this natural is an entire division.
+
+    Since \\(0\\) is divisible by any natural this may cause some problems if you will look for the bigger one, so we expect you to return ``None``.
+
+    Recall that the operator ``%`` returns the remainder of the Euclidian division.
+environment: default
+evaluate: best
+groups: false
+limits:
+    output: '2'
+    memory: '100'
+    time: '30'
+name: 'Session 3: Greatest divisor'
+network_grading: false
+order: 6
+problems:
+    q1:
+        language: python
+        type: code
+        header: |-
+            Provide the body of the following method:
+
+            .. code-block:: python
+
+                def greatest_divisor(a):
+        name: Implementation
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

@@ -1,0 +1,31 @@
+accessible: true
+author: Tanguy De Bels
+context: |-
+    The Greatest Common Divisor of two natural numbers ``a`` and ``b`` is the biggest natural number ``k`` such that the division of ``a`` and ``b`` by this natural ``k`` is an entire division.
+
+    Euclid found a very simple recursive algorithm to find the GCD of two numbers:
+    $$\\text{gcd}(a,0) = a$$
+    $$\\text{gcd}(a,b) = \\text{gcd}(b,a\\%b)$$
+
+    Recall that the operator ``%`` returns the remainder of the euclidian division.
+environment: default
+evaluate: best
+groups: false
+limits:
+    output: '2'
+    memory: '100'
+    time: '30'
+name: 'Session 3: Greatest common divisor'
+network_grading: false
+order: 8
+problems:
+    q1:
+        language: python
+        type: code
+        header: Implement the function ``gcd(a,b)`` in Python.
+        name: Implementation
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

@@ -1,0 +1,34 @@
+accessible: true
+author: Tanguy De Bels
+context: |-
+    Suppose you now have ``base`` € on your savings account.
+
+    If you leave it ``x`` years on that account at a fixed cummulative interest rate of ``y`` %, what will be the balance on your account after these ``x`` years?
+
+    Return that amount.
+environment: default
+evaluate: best
+groups: false
+limits:
+    output: '2'
+    memory: '100'
+    time: '30'
+name: 'Session 3: Interest calculation'
+network_grading: false
+order: 7
+problems:
+    q1:
+        language: python
+        type: code
+        header: |-
+            Provide the body of the following method:
+
+            .. code-block:: python
+
+                def interests(base, y, x):
+        name: Implementation
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

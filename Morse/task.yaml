@@ -1,0 +1,43 @@
+accessible: true
+author: Tanguy De Bels
+context: |-
+    After the third world war, the planet is now in a post-apocalyptic state. You're one of the only survivors and are looking for a bit of fellowship. But you can't exactly swipe tinder since most of the network is down.
+
+    Fortunately your best friend is with you... Your computer (Yes, that's lame)! With its help you'll be able to reach the rest of the world. Since you've got a `Morse <https://en.wikipedia.org/wiki/Morse_code>`_ dictionnay stored on your computer (Matt Damon did have an ASCII table in "Alone on Mars" it's not so incongruous) you'll use it to translate your text and emit it through an old citizen band radio.
+
+    Note that if you should try to translate any unregistered character, you should raise a ``TypeError`` exception.
+environment: default
+evaluate: best
+groups: false
+limits:
+    output: '2'
+    memory: '100'
+    time: '30'
+name: 'Session 7: Apocalypse - Morse translation'
+network_grading: false
+order: 21
+problems:
+    q1:
+        language: python
+        type: code
+        header: |-
+            Implement the function ``translate(data)`` in Python.
+
+            With ``data`` as the string you wish to encode in Morse and a dictionnary ``morse`` usable to do the translations.
+
+            .. code-block:: python
+
+              morse = {
+              "A" : ".-",
+              "B" : "-...",
+              "C" : "-.-.",
+              "D" : "-..",
+              "E" : ".",
+              ...
+              }
+        name: Implementation
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

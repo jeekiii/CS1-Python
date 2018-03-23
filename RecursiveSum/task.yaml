@@ -1,0 +1,38 @@
+accessible: true
+author: Tanguy De Bels
+context: |-
+    The method ``sum(list)`` returns the sum of the elements contained in ``list``.
+
+    Example: the sum of :math:`[1, 2, 3]` is :math:`6`
+
+    Note that your algorithm should be able to compute the sum even
+    when the list ``list`` contains malicious elements (not numbers).
+
+    Note that this question is the same question as one that was asked in the fifth session, except that we now expect you to solve it in a recursive way. The use of ``while`` and ``for`` loops will be prohibited to ensure you provide a recursive solution.
+environment: default
+evaluate: best
+groups: false
+limits:
+    time: '30'
+    memory: '100'
+    ouput: '2'
+name: 'Session 8: Sum'
+network_grading: false
+order: 23
+problems:
+    q1:
+        header: |-
+            Provide the body of the following method:
+
+            .. code-block:: python
+
+                def sum(list):
+        language: python
+        name: Implementation
+        type: code
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0

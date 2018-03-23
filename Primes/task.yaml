@@ -1,0 +1,34 @@
+accessible: true
+author: Tanguy De Bels
+context: |-
+    `The prime numbers <https://en.wikipedia.org/wiki/Prime_number>`_ , used by mathematicians, are a set of numbers sharing a same property.
+
+    A prime is a natural number greater than 1 that has no positive divisors other than 1 and itself. A natural number greater than 1 that is not a prime number is called a composite number.
+
+    To calculate prime numbers you can use the principle of Eratosthene's sieve: for each successive number, check if it is divisible by the lower prime numbers already found. If it is not divisible by any, it is prime and can be added to the list.
+
+    Implement the function primes(max) that returns the list of all prime numbers until max.
+    If max is negative or zero, the empty list should be returned.
+
+    To limit the complexity of your solution, decompose into auxiliary functions as needed.
+environment: default
+evaluate: best
+groups: false
+limits:
+    output: '2'
+    memory: '100'
+    time: '30'
+name: 'Session 4: Prime numbers'
+network_grading: false
+order: 15
+problems:
+    q1:
+        language: python
+        type: code
+        header: Implement the function ``primes(max)`` in Python.
+        name: Implementation
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

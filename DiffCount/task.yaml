@@ -1,0 +1,40 @@
+accessible: true
+author: Tanguy De Bels
+context: |-
+    The method ``diff_count(lst)`` returns the number of different elements contained in the list ``lst``.
+
+
+    *For example:*
+
+    - If ``lst`` equals ``[3, 5, 3]`` then the method should return 2.
+
+    - If all the elements are the same, it should return 1.
+
+    - If the list ``lst`` is empty, it should return 0.
+environment: default
+evaluate: best
+groups: false
+limits:
+    output: '2'
+    memory: '100'
+    time: '30'
+name: 'Session 4: Difference counter'
+network_grading: false
+order: 16
+problems:
+    q1:
+        language: python
+        header: |-
+            Provide the body of the following method:
+
+            .. code-block:: python
+
+                def diff_count(lst):
+        name: Implementation
+        type: code
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0
