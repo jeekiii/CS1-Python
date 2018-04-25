@@ -8,24 +8,36 @@ context: |-
     $$\\text{gcd}(a,b) = \\text{gcd}(b,a\\%b)$$
 
     Recall that the operator ``%`` returns the remainder of the euclidian division.
+
+    .. raw:: html
+
+       <script defer>
+       $(document).ready(function(){
+           setTimeout(function() {
+           window.parent.postMessage({height: document.body.scrollHeight}, "*");
+        }, 0);
+       })
+       </script>
 environment: default
 evaluate: best
 groups: false
+input_random: '0'
 limits:
     output: '2'
     memory: '100'
     time: '30'
 name: 'Session 3: Greatest common divisor'
 network_grading: false
-order: 8
+order: 10
 problems:
     q1:
-        language: python
-        type: code
         header: Implement the function ``gcd(a,b)`` in Python.
+        type: code
+        language: python
         name: Implementation
 stored_submissions: 0
 submission_limit:
     amount: -1
     period: -1
+tags: {}
 weight: 1.0

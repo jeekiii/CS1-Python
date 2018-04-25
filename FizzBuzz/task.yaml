@@ -14,23 +14,34 @@ context: |-
 
         i = ...    # the number to check (i >= 1)
         temp = ... # "fizz", "buzz", "fizzbuzz" or "no" depending on i's value
+
+    .. raw:: html
+
+       <script defer>
+       $(document).ready(function(){
+           setTimeout(function() {
+           window.parent.postMessage({height: document.body.scrollHeight}, "*");
+        }, 0);
+       })
+       </script>
 environment: default
 evaluate: best
 groups: false
+input_random: '0'
 limits:
-    time: '30'
-    memory: '100'
     output: '2'
+    memory: '100'
+    time: '30'
 name: 'Session 2: FizzBuzz'
 network_grading: false
-order: 4
+order: 6
 problems:
     q1:
         header: '``i`` is provided and you need to store the adequate return value
             in ``temp``'
+        type: code
         language: python
         name: Implementation
-        type: code
 stored_submissions: 0
 submission_limit:
     amount: -1

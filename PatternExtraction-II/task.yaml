@@ -16,24 +16,36 @@ context: |-
     With this output as input ``treatment`` would output 'number*2 vowel-up*1 vowel-low*1 consonant-up*1 number*1'
 
     Do not hesitate to use as many submethods as you judge necessary.
+
+    .. raw:: html
+
+       <script defer>
+       $(document).ready(function(){
+           setTimeout(function() {
+           window.parent.postMessage({height: document.body.scrollHeight}, "*");
+        }, 0);
+       })
+       </script>
 environment: default
 evaluate: best
 groups: false
+input_random: '0'
 limits:
     output: '2'
     memory: '100'
     time: '30'
 name: 'Session 4: Anonymous - Information treatment'
 network_grading: false
-order: 18
+order: 21
 problems:
     q1:
-        language: python
-        type: code
         header: Implement the function ``treatment(data)`` in Python.
+        type: code
+        language: python
         name: Implementation
 stored_submissions: 0
 submission_limit:
     amount: -1
     period: -1
+tags: {}
 weight: 1.0

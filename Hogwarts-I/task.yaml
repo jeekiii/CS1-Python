@@ -1,0 +1,42 @@
+accessible: true
+author: Tanguy De Bels
+context: |-
+    Once again, the **Fat Lady** drank all the wine of the *drunken monks* painting and **Sir Cadogan** isn't available to replace her. The access to the *Gryffindor Common Room* isn't guarded and the **Slytherins** are up to no good.
+
+    We need you to quickly design a password checker to fill in the big void left by the *Fat Lady's departure*.
+
+    Create a function ``portrait(right_password, entered_password)`` that will return ``True`` if the two passwords are identical and ``False`` otherwise.
+
+    .. raw:: html
+
+       <script defer>
+       $(document).ready(function(){
+           setTimeout(function() {
+           window.parent.postMessage({height: document.body.scrollHeight}, "*");
+        }, 0);
+       })
+       </script>
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    output: '2'
+    memory: '100'
+    time: '30'
+name: 'Session 4: Hogwarts - Fat Lady'
+network_grading: false
+order: 19
+problems:
+    q1:
+        header: Implement the function ``portrait(right_password, entered_password)``
+            in Python.
+        type: code
+        language: python
+        name: Implementation
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0

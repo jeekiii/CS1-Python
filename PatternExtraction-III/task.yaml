@@ -14,24 +14,36 @@ context: |-
     - ``extract(code)``: gives the nature of each element of a string.
 
     - ``treatment(code)``: transform a suite of elements into a pattern.
+
+    .. raw:: html
+
+       <script defer>
+       $(document).ready(function(){
+           setTimeout(function() {
+           window.parent.postMessage({height: document.body.scrollHeight}, "*");
+        }, 0);
+       })
+       </script>
 environment: default
 evaluate: best
 groups: false
+input_random: '0'
 limits:
     output: '2'
     memory: '100'
     time: '30'
 name: 'Session 7: Anonymous - Information collection'
 network_grading: false
-order: 20
+order: 25
 problems:
     q1:
-        language: python
-        type: code
         header: Implement the function ``collect(file)`` in Python.
+        type: code
+        language: python
         name: Implementation
 stored_submissions: 0
 submission_limit:
     amount: -1
     period: -1
+tags: {}
 weight: 1.0

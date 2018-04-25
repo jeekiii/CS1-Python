@@ -11,16 +11,27 @@ context: |-
     $$\\text{F}_n = \\text{F}_{n-1} + \\text{F}_{n-2}$$
 
     Adapt the function which you implemented in session 3 to create a recursive solution to this exercise. You should also return ``None`` in the case of an incongruous input.
+
+    .. raw:: html
+
+       <script defer>
+       $(document).ready(function(){
+           setTimeout(function() {
+           window.parent.postMessage({height: document.body.scrollHeight}, "*");
+        }, 0);
+       })
+       </script>
 environment: default
 evaluate: best
 groups: false
+input_random: '0'
 limits:
-    time: '30'
-    memory: '100'
     output: '2'
+    memory: '100'
+    time: '30'
 name: 'Session 8: Fibonacci'
 network_grading: false
-order: 24
+order: 29
 problems:
     q1:
         header: |-
@@ -29,9 +40,9 @@ problems:
             .. code-block:: python
 
                 def fibo(x):
+        type: code
         language: python
         name: Implementation
-        type: code
 stored_submissions: 0
 submission_limit:
     amount: -1

@@ -5,16 +5,27 @@ context: |-
 
     * The output is in nondecreasing order (each element is no smaller than the previous element according to the desired total order);
     * The output is a permutation (reordering but with all of the original elements) of the input.
+
+    .. raw:: html
+
+       <script defer>
+       $(document).ready(function(){
+           setTimeout(function() {
+           window.parent.postMessage({height: document.body.scrollHeight}, "*");
+        }, 0);
+       })
+       </script>
 environment: default
 evaluate: best
 groups: false
+input_random: '0'
 limits:
-    time: '30'
-    memory: '100'
     output: '2'
+    memory: '100'
+    time: '30'
 name: 'Session 5: List sorting'
 network_grading: false
-order: 19
+order: 23
 problems:
     q1:
         header: |-
@@ -22,9 +33,9 @@ problems:
 
                 a_list = ... #list to sort
                 sorted_list = ... #store in this variable the sorted version of the list
+        type: code
         language: python
         name: Implementation
-        type: code
 stored_submissions: 0
 submission_limit:
     amount: -1

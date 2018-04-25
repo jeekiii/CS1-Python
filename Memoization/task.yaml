@@ -8,21 +8,29 @@ context: |-
     You will now implement a function that will store the calls of a function in a dedicated dictionnary and use it in later calls.
 
     Note that besides the ``memoization`` function, you should also implement the methods ``factorial`` and ``fibonacci`` able to make use of the memoization principle.
+
+    .. raw:: html
+
+       <script defer>
+       $(document).ready(function(){
+           setTimeout(function() {
+           window.parent.postMessage({height: document.body.scrollHeight}, "*");
+        }, 0);
+       })
+       </script>
 environment: default
 evaluate: best
 groups: false
 input_random: '0'
 limits:
-    time: '30'
     output: '2'
     memory: '100'
+    time: '30'
 name: 'Session 8: Memoization'
 network_grading: false
-order: 25
+order: 30
 problems:
     q1:
-        type: code
-        language: python
         header: |-
             Implement the function ``memoization(fun, n)`` in Python.
 
@@ -35,16 +43,18 @@ problems:
             .. code-block:: python
 
                 mapping = {fibonacci: fibo, factorial: fact, ...}
+        type: code
+        language: python
         name: Memoization implementation
     q2:
-        name: Fibonacci implementation
-        language: python
-        type: code
         header: Implement a function ``fibonacci(n)`` in Python which will be used
             by and use  ``memoization``.
-    q3:
+        name: Fibonacci implementation
         type: code
+        language: python
+    q3:
         name: Factorial implementation
+        type: code
         language: python
         header: Implement a function ``factorial(n)`` in Python which will be used
             by and use ``memoization``.

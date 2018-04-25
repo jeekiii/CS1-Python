@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 import subprocess
-import shutil
 import shlex
 import sys
 import os
@@ -14,14 +13,16 @@ from inginious import input
 
 import gettext
 
-# This runner suits for typical exercices of LSINF1101/FSAB1401
+# This runner suits for typical exercises of LSINF1101/FSAB1401
 # Should be adapted if used in another occasion
 # Structure used:
-#  -One folder : src with a subdirectory containing the tempaltes
-#  -One folder : $i18n with subdirecotries containing the translations
+#  -One folder : src with a proposer answer, the tests and a subdirectory containing the templates
 #  -A run file
-#  -A compiler script
 #  -A task file
+# Note that beside this structure we use the global folder common (c) and common_student (c_s) containing:
+#  -The compiler script         (c)
+#  -The tests runner script     (c)
+#  -The translations folder     (c_s)
 
 def init_translations():
     """
@@ -111,15 +112,15 @@ def run_code(n_exercises, lang):
         print(errors)
         outerr = rst.get_codeblock("python", errors[:errors.rfind('FAILED')])
     
-    #expected error code: 252=outofmemory, 253=timedout
-    #127 = code returned by our runner
+    # expected error code: 252=outofmemory, 253=timedout
+    # 127 = code returned by our runner
     if resultat == 127:
         feedback.set_global_result('success')
     elif resultat == 252:
         feedback.set_global_result('overflow')
     elif resultat == 253:
         feedback.set_global_result('timeout')
-    else: # Tests failed
+    else:  # Tests failed
         if n_exercises == 1:
             feedback.set_global_result('failed')
             feedback.set_global_feedback(_("It seems that you have made mistakes in your code…\n\n") + outerr + "\n")
@@ -149,4 +150,3 @@ if __name__ == '__main__':
     num_exercises = compute_code()
     compile_code()
     run_code(num_exercises, language)
-

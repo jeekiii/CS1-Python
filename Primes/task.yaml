@@ -11,24 +11,36 @@ context: |-
     If max is negative or zero, the empty list should be returned.
 
     To limit the complexity of your solution, decompose into auxiliary functions as needed.
+
+    .. raw:: html
+
+       <script defer>
+       $(document).ready(function(){
+           setTimeout(function() {
+           window.parent.postMessage({height: document.body.scrollHeight}, "*");
+        }, 0);
+       })
+       </script>
 environment: default
 evaluate: best
 groups: false
+input_random: '0'
 limits:
     output: '2'
     memory: '100'
     time: '30'
 name: 'Session 4: Prime numbers'
 network_grading: false
-order: 15
+order: 17
 problems:
     q1:
-        language: python
-        type: code
         header: Implement the function ``primes(max)`` in Python.
+        type: code
+        language: python
         name: Implementation
 stored_submissions: 0
 submission_limit:
     amount: -1
     period: -1
+tags: {}
 weight: 1.0

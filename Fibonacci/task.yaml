@@ -3,7 +3,7 @@ author: Tanguy De Bels
 context: |-
     In mathematics, the `Fibonacci series <https://en.wikipedia.org/wiki/Fibonacci_number>`_ are the numbers in the following sequence of integers, which is characterized by the fact that every number after the first two is the sum of the two preceding ones:
 
-    Example: :math:`0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...`
+    /*Example*: :math:`0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...`
 
     A very simple algorithm would be:
     $$\\text{F}_0 = 0$$
@@ -11,22 +11,33 @@ context: |-
     $$\\text{F}_n = \\text{F}_{n-1} + \\text{F}_{n-2}$$
 
     Create a function ``fibonacci(n)`` that prints the nth element of the Fibonacci sequence.
+
+    .. raw:: html
+
+       <script defer>
+       $(document).ready(function(){
+           setTimeout(function() {
+           window.parent.postMessage({height: document.body.scrollHeight}, "*");
+        }, 0);
+       })
+       </script>
 environment: default
 evaluate: best
 groups: false
+input_random: '0'
 limits:
-    time: '30'
-    memory: '100'
     output: '2'
+    memory: '100'
+    time: '30'
 name: 'Session 3: Fibonacci'
 network_grading: false
-order: 9
+order: 11
 problems:
     q1:
         header: Implement the function ``fibonacci(n)`` in Python.
+        type: code
         language: python
         name: Implementation
-        type: code
 stored_submissions: 0
 submission_limit:
     amount: -1

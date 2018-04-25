@@ -8,22 +8,33 @@ context: |-
     Such structures are hard to read for a program, however, and often need to be flattened to a simple one-level depth list before. The flattened version of the list above would be: :math:`[1, 2, 3, 4, 5, 6, 7, 8]`
 
     Create a function ``flatten(l)`` that returns a one-level depth list from a multi-level depth list.
+
+    .. raw:: html
+
+       <script defer>
+       $(document).ready(function(){
+           setTimeout(function() {
+           window.parent.postMessage({height: document.body.scrollHeight}, "*");
+        }, 0);
+       })
+       </script>
 environment: default
 evaluate: best
 groups: false
+input_random: '0'
 limits:
-    time: '30'
-    memory: '100'
     output: '2'
+    memory: '100'
+    time: '30'
 name: 'Session 8: Flatten'
 network_grading: false
-order: 27
+order: 33
 problems:
     q1:
         header: Implement the function ``flatten(l)`` in Python.
+        type: code
         language: python
         name: Implementation
-        type: code
 stored_submissions: 0
 submission_limit:
     amount: -1

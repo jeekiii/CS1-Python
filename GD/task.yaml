@@ -6,29 +6,41 @@ context: |-
     Since \\(0\\) is divisible by any natural this may cause some problems if you will look for the bigger one, so we expect you to return ``None``.
 
     Recall that the operator ``%`` returns the remainder of the Euclidian division.
+
+    .. raw:: html
+
+       <script defer>
+       $(document).ready(function(){
+           setTimeout(function() {
+           window.parent.postMessage({height: document.body.scrollHeight}, "*");
+        }, 0);
+       })
+       </script>
 environment: default
 evaluate: best
 groups: false
+input_random: '0'
 limits:
     output: '2'
     memory: '100'
     time: '30'
 name: 'Session 3: Greatest divisor'
 network_grading: false
-order: 6
+order: 8
 problems:
     q1:
-        language: python
-        type: code
         header: |-
             Provide the body of the following method:
 
             .. code-block:: python
 
                 def greatest_divisor(a):
+        type: code
+        language: python
         name: Implementation
 stored_submissions: 0
 submission_limit:
     amount: -1
     period: -1
+tags: {}
 weight: 1.0

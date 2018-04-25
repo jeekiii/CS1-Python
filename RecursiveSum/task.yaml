@@ -9,16 +9,27 @@ context: |-
     when the list ``list`` contains malicious elements (not numbers).
 
     Note that this question is the same question as one that was asked in the fifth session, except that we now expect you to solve it in a recursive way. The use of ``while`` and ``for`` loops will be prohibited to ensure you provide a recursive solution.
+
+    .. raw:: html
+
+       <script defer>
+       $(document).ready(function(){
+           setTimeout(function() {
+           window.parent.postMessage({height: document.body.scrollHeight}, "*");
+        }, 0);
+       })
+       </script>
 environment: default
 evaluate: best
 groups: false
+input_random: '0'
 limits:
-    time: '30'
+    output: '2'
     memory: '100'
-    ouput: '2'
+    time: '30'
 name: 'Session 8: Sum'
 network_grading: false
-order: 23
+order: 28
 problems:
     q1:
         header: |-
@@ -27,9 +38,9 @@ problems:
             .. code-block:: python
 
                 def sum(list):
+        type: code
         language: python
         name: Implementation
-        type: code
 stored_submissions: 0
 submission_limit:
     amount: -1

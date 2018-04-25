@@ -6,20 +6,29 @@ context: |-
     Fortunately your best friend is with you... Your computer (Yes, that's lame)! With its help you'll be able to reach the rest of the world. Since you've got a `Morse <https://en.wikipedia.org/wiki/Morse_code>`_ dictionnay stored on your computer (Matt Damon did have an ASCII table in "Alone on Mars" it's not so incongruous) you'll use it to translate your text and emit it through an old citizen band radio.
 
     Note that if you should try to translate any unregistered character, you should raise a ``TypeError`` exception.
+
+    .. raw:: html
+
+       <script defer>
+       $(document).ready(function(){
+           setTimeout(function() {
+           window.parent.postMessage({height: document.body.scrollHeight}, "*");
+        }, 0);
+       })
+       </script>
 environment: default
 evaluate: best
 groups: false
+input_random: '0'
 limits:
     output: '2'
     memory: '100'
     time: '30'
 name: 'Session 7: Apocalypse - Morse translation'
 network_grading: false
-order: 21
+order: 26
 problems:
     q1:
-        language: python
-        type: code
         header: |-
             Implement the function ``translate(data)`` in Python.
 
@@ -35,9 +44,12 @@ problems:
               "E" : ".",
               ...
               }
+        type: code
+        language: python
         name: Implementation
 stored_submissions: 0
 submission_limit:
     amount: -1
     period: -1
+tags: {}
 weight: 1.0

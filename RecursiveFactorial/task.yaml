@@ -3,23 +3,35 @@ author: Tanguy De Bels
 context: |-
     In mathematics, the factorial of a strictly positive integer ``x``, noted :math:`x!` is defined as the product of all strictly positive integers less than or equal to ``x``. The factorial of 0 is defined as 1. Write a function that computes the factorial of a given integer x.
 
-    Example:
+    *Examples*:
 
-    :math:`5! = 5 × 4 × 3 × 2 × 1 = 120`
-    :math:`0! = 5 × 4 × 3 × 2 × 1 = 120`
+    * :math:`5! = 5 × 4 × 3 × 2 × 1 = 120`
+
+    * :math:`0! = 1`
 
     Note that is essentially the same question as one that was asked in the first session, except that we now expect you to solve it differently. The use of ``while`` and ``for`` loops will be prohibited and you are expected to solve it by writing a recursive function.
     We also want you to return ``None`` whenever the factorial cannot be computed.
+
+    .. raw:: html
+
+       <script defer>
+       $(document).ready(function(){
+           setTimeout(function() {
+           window.parent.postMessage({height: document.body.scrollHeight}, "*");
+        }, 0);
+       })
+       </script>
 environment: default
 evaluate: best
 groups: false
+input_random: '0'
 limits:
-    time: '30'
-    memory: '100'
     output: '2'
+    memory: '100'
+    time: '30'
 name: 'Session 8: Factorial'
 network_grading: false
-order: 25
+order: 31
 problems:
     q1:
         header: |-
@@ -28,9 +40,9 @@ problems:
             .. code-block:: python
 
                 def factorial(x):
+        type: code
         language: python
         name: Implementation
-        type: code
 stored_submissions: 0
 submission_limit:
     amount: -1

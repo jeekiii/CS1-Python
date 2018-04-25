@@ -8,27 +8,38 @@ context: |-
     To implement your solution, use only a ``while`` loop and subtractions (the simple solution rest = a % b is not allowed; we want to test if you are capable of implementing such an operation yourself).
 
     Note that you should not allow division by 0 and assign the value ``None`` to ``rest`` if this would occur.
+
+    .. raw:: html
+
+       <script defer>
+       $(document).ready(function(){
+           setTimeout(function() {
+           window.parent.postMessage({height: document.body.scrollHeight}, "*");
+        }, 0);
+       })
+       </script>
 environment: default
 evaluate: best
 groups: false
+input_random: '0'
 limits:
     output: '2'
     memory: '100'
     time: '30'
 name: 'Session 2: Remainder of an integer division'
 network_grading: false
-order: 5
+order: 7
 problems:
     q1:
-        language: python
         header: |-
             .. code-block:: python
 
                 a = ... #variable to evaluate
                 b = ... #variable to evaluate
                 rest = ... #store in this variable the remainder of the division a/b
-        name: Implementation
         type: code
+        language: python
+        name: Implementation
 stored_submissions: 0
 submission_limit:
     amount: -1

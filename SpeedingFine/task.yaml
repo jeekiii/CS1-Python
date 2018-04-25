@@ -14,23 +14,34 @@ context: |-
     - If the maximum speed is 50km/h and the vehicle is traveling at 56km/h, the penalty will be 6 * 5 = 30€.
 
     - If the maximum speed is 50km/h and the vehicle is traveling at 51km/h, the fine will be 12.5€.
+
+    .. raw:: html
+
+       <script defer>
+       $(document).ready(function(){
+           setTimeout(function() {
+           window.parent.postMessage({height: document.body.scrollHeight}, "*");
+        }, 0);
+       })
+       </script>
 environment: default
 evaluate: best
 groups: false
+input_random: '0'
 limits:
     output: '2'
     memory: '100'
     time: '30'
 name: 'Session 3: Speeding fine'
 network_grading: false
-order: 11
+order: 13
 problems:
     q1:
-        language: python
         header: Implement the function ``fine(authorized_speed, actual_speed)`` in
             Python.
-        name: Implementation
         type: code
+        language: python
+        name: Implementation
 stored_submissions: 0
 submission_limit:
     amount: -1

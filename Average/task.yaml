@@ -1,28 +1,37 @@
 accessible: true
 author: Tanguy De Bels
-context: The method ``average(list)`` returns the arithmetic mean of the elements
-    contained in list, except if ``list`` is empty in which case it should return
-    ``None``.
+context: |-
+    The method ``average(list)`` returns the arithmetic mean of the elements contained in list, except if ``list`` is empty in which case it should return ``None``.
+
+    .. raw:: html
+
+       <script defer>
+       $(document).ready(function(){
+           setTimeout(function() {
+           window.parent.postMessage({height: document.body.scrollHeight}, "*");
+        }, 0);
+       })
+       </script>
 environment: default
 evaluate: best
 groups: false
 input_random: '0'
 limits:
-    time: '30'
     output: '2'
     memory: '100'
+    time: '30'
 name: 'Session 4: Average'
 network_grading: false
-order: 14
+order: 16
 problems:
     q1:
-        type: code
         header: |-
             Provide the body of the following method:
 
             .. code-block:: python
 
                 def average(list):
+        type: code
         language: python
         name: Implementation
 stored_submissions: 0

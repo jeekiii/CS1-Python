@@ -10,22 +10,33 @@ context: |-
     *Example*:
     deepconcat(["a",["b","6"],"e",["5",["g","h"]],"i"])
     => returns "ab6de5ghi"
+
+    .. raw:: html
+
+       <script defer>
+       $(document).ready(function(){
+           setTimeout(function() {
+           window.parent.postMessage({height: document.body.scrollHeight}, "*");
+        }, 0);
+       })
+       </script>
 environment: default
 evaluate: best
 groups: false
+input_random: '0'
 limits:
-    time: '30'
-    memory: '100'
     output: '2'
+    memory: '100'
+    time: '30'
 name: 'Session 8: Deep concatenation'
 network_grading: false
-order: 26
+order: 32
 problems:
     q1:
         header: Implement the function ``deep_concat(l)`` in Python.
+        type: code
         language: python
         name: Implementation
-        type: code
 stored_submissions: 0
 submission_limit:
     amount: -1

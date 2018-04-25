@@ -6,29 +6,41 @@ context: |-
     If you leave it ``x`` years on that account at a fixed cummulative interest rate of ``y`` %, what will be the balance on your account after these ``x`` years?
 
     Return that amount.
+
+    .. raw:: html
+
+       <script defer>
+       $(document).ready(function(){
+           setTimeout(function() {
+           window.parent.postMessage({height: document.body.scrollHeight}, "*");
+        }, 0);
+       })
+       </script>
 environment: default
 evaluate: best
 groups: false
+input_random: '0'
 limits:
     output: '2'
     memory: '100'
     time: '30'
 name: 'Session 3: Interest calculation'
 network_grading: false
-order: 7
+order: 9
 problems:
     q1:
-        language: python
-        type: code
         header: |-
             Provide the body of the following method:
 
             .. code-block:: python
 
                 def interests(base, y, x):
+        type: code
+        language: python
         name: Implementation
 stored_submissions: 0
 submission_limit:
     amount: -1
     period: -1
+tags: {}
 weight: 1.0

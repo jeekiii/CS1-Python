@@ -47,10 +47,10 @@ class TestFactorial(unittest.TestCase):
         self.assertEqual(1, stu_ans, ans.format(stu_ans))
 
     @timeout_decorator.timeout(1, exception_message=_("There can not be a number in a negative place in a sequence,"
-                                                        " you should have returned False."))
+                                                        " you should have returned None."))
     def test_negatives(self):
         a = [-(random.randint(1, 100)) for _ in range(5)]
-        ans = _("There can not be a number in a negative place in a sequence, you should have returned False.")
+        ans = _("There can not be a number in a negative place in a sequence, you should have returned None.")
         for i in range(len(a)):
             try:
                 stu_ans = fibonacci.fibo(a[i])

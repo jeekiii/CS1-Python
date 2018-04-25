@@ -7,26 +7,36 @@ context: |-
 
     Note that your algorithm should be able to compute the sum even
     when the list ``list`` contains malicious elements (not numbers).
-environment: java7
+
+    .. raw:: html
+
+       <script defer>
+       $(document).ready(function(){
+           setTimeout(function() {
+           window.parent.postMessage({height: document.body.scrollHeight}, "*");
+        }, 0);
+       })
+       </script>
+environment: default
 evaluate: best
 groups: false
 input_random: '0'
 limits:
-    time: '30'
     output: '2'
     memory: '100'
+    time: '30'
 name: 'Session 4: Sum'
 network_grading: false
-order: 13
+order: 15
 problems:
     q1:
-        type: code
         header: |-
             Provide the body of the following method:
 
             .. code-block:: python
 
                 def sum(list):
+        type: code
         language: python
         name: Implementation
 stored_submissions: 0

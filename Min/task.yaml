@@ -4,20 +4,29 @@ context: |-
     Suppose the variables ``a``, ``b`` and ``c`` contain a natural number.
 
     Write a code fragment that assigns to the variable ``min`` the smallest of these numbers.
+
+    .. raw:: html
+
+       <script defer>
+       $(document).ready(function(){
+           setTimeout(function() {
+           window.parent.postMessage({height: document.body.scrollHeight}, "*");
+        }, 0);
+       })
+       </script>
 environment: default
 evaluate: best
 groups: false
+input_random: '0'
 limits:
     output: '2'
     memory: '100'
     time: '30'
 name: 'Session 2: Minimum'
 network_grading: false
-order: 2
+order: 4
 problems:
     q1:
-        language: python
-        type: code
         header: |-
             .. code-block:: python
 
@@ -25,9 +34,12 @@ problems:
                 b = ... #variable to evaluate
                 c = ... #variable to evaluate
                 minima = ... #store in this variable the smallest of the three variables
+        type: code
+        language: python
         name: Implementation
 stored_submissions: 0
 submission_limit:
     amount: -1
     period: -1
+tags: {}
 weight: 1.0

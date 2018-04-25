@@ -4,24 +4,36 @@ context: |-
     The method ``maximum(lst)`` returns the maximum of the elements contained in the list ``lst``.
 
     The value ``None`` is returned if the list ``lst`` is empty.
+
+    .. raw:: html
+
+       <script defer>
+       $(document).ready(function(){
+           setTimeout(function() {
+           window.parent.postMessage({height: document.body.scrollHeight}, "*");
+        }, 0);
+       })
+       </script>
 environment: default
 evaluate: best
 groups: false
+input_random: '0'
 limits:
-    memory: '100'
     output: '2'
+    memory: '100'
     time: '30'
 name: 'Session 4: Maximum'
 network_grading: false
-order: 12
+order: 14
 problems:
     q1:
-        type: code
-        name: Implementation
         header: Implement the function ``maximum(lst)`` in Python.
+        type: code
         language: python
+        name: Implementation
 stored_submissions: 0
 submission_limit:
     amount: -1
     period: -1
+tags: {}
 weight: 1.0

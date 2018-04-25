@@ -1,0 +1,42 @@
+accessible: true
+author: Tanguy De Bels
+context: |4-
+
+    All your life you wondered *"Where did this stupid owl misplace my letter?"*, *"When will I finally go to Hogwarts?"* or even on the end *"Am I actually a squib?"*. Do not worry!
+
+    **Hogwarts** finally contacted you for an important task. Even if you're too old to learn **witchcraft**, they're lucky because you learned a different kind of magic: **programming**.
+
+    They decided to modernize a bit their admission services and want you to create a program that will be able to fill a file (template of the admission letter) with the name of a student. This way, they will be able to save on the feathers and reduce the workload of the elves!
+
+    .. raw:: html
+
+       <script defer>
+       $(document).ready(function(){
+           setTimeout(function() {
+           window.parent.postMessage({height: document.body.scrollHeight}, "*");
+        }, 0);
+       })
+       </script>
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    output: '2'
+    memory: '100'
+    time: '30'
+name: 'Session 6: Hogwarts - Admission letter'
+network_grading: false
+order: 24
+problems:
+    q1:
+        type: code
+        language: python
+        header: Implement the function ``write(letter_template, name)`` in Python.
+        name: Implementation
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0

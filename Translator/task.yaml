@@ -12,25 +12,36 @@ context: |-
     - "I'm fond of Dean" would become in french with the dictionnary ``fr``: "je suis amoureux de doyen"
 
     Note that we do not excpect you to provide an exact translation but a word to word one. Moreover the keys are stored in lowercase in the dictionnaries.
+
+    .. raw:: html
+
+       <script defer>
+       $(document).ready(function(){
+           setTimeout(function() {
+           window.parent.postMessage({height: document.body.scrollHeight}, "*");
+        }, 0);
+       })
+       </script>
 environment: default
 evaluate: best
 groups: false
+input_random: '0'
 limits:
     output: '2'
     memory: '100'
     time: '30'
 name: 'Session 7: Apocalypse - Language translation'
 network_grading: false
-order: 22
+order: 27
 problems:
     q1:
-        type: code
         header: |-
             Implement the function ``translate(data, lan)`` in Python.
 
             With ``data`` as the string you wish to translate and dictionnaries named according to ``lan`` usable to do the translations in the target language.
-        name: Implementation
+        type: code
         language: python
+        name: Implementation
 stored_submissions: 0
 submission_limit:
     amount: -1

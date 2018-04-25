@@ -9,22 +9,33 @@ context: |-
     This index is calculated as the ratio between a person's weight, expressed in kg, and the square of the person's height, expressed in meters.
 
     Create a function ``quetelet(height, weight)`` to calculate a person's Quetelet index and return ``thin`` string for a person with an index strictly less than 20, ``normal`` for a person whose index is between 20 and 25, ``overweight`` if the index is strictly greater than 25 and less than or equal to 30 and ``obese`` when it is strictly greater than 30.
+
+    .. raw:: html
+
+       <script defer>
+       $(document).ready(function(){
+           setTimeout(function() {
+           window.parent.postMessage({height: document.body.scrollHeight}, "*");
+        }, 0);
+       })
+       </script>
 environment: default
 evaluate: best
 groups: false
+input_random: '0'
 limits:
     output: '2'
-    time: '30'
     memory: '100'
+    time: '30'
 name: 'Session 3: BMI index'
 network_grading: false
-order: 10
+order: 12
 problems:
     q1:
-        language: python
-        type: code
-        name: Implementation
         header: Implement the function ``quetelet(height, weight)`` in Python.
+        type: code
+        language: python
+        name: Implementation
 stored_submissions: 0
 submission_limit:
     amount: -1
