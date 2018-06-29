@@ -1,0 +1,53 @@
+accessible: true
+author: Tanguy De Bels
+context: |-
+    In this exercise, you're asked to provide a class *Student*.
+
+    The students are supposed to have the following characteristics:
+    * A firstname
+    * A surname
+    * A birth date
+    * An email address
+    * A student number (different for every student and given at the creation of the object)
+
+    The object, when cast as a **string** should return for example:
+
+    Student number *0*: *Hervé* *Ducobu* born the *1st of april*, can be reached at *doNotReachMeForHoweworks@gmail.com*
+
+    To do so you're invited to use the magic methods.
+
+    .. raw:: html
+
+       <script defer>
+       $(document).ready(function(){
+           setTimeout(function() {
+           window.parent.postMessage({height: document.body.scrollHeight}, "*");
+        }, 0);
+       })
+       </script>
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    output: '2'
+    memory: '100'
+    time: '30'
+name: 'Session 9: Student - init'
+network_grading: false
+order: 34
+problems:
+    q1:
+        header: |-
+          Implement the class ``Student`` in Python.
+
+          We will create the object with *stu = Student('firstname', 'surname', 'birthday', 'email')*
+        type: code
+        language: python
+        name: Implementation
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0

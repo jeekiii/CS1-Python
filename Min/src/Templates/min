@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 
-def forbid_min(a, b, c):
+def forbid_min(a, *b):
     raise AttributeError(("Nice try! But built-in 'min' function has been disabled.\n"
                          "\t\tPlease write an actual algorithm returning the minimum of the list."))
 

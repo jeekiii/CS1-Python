@@ -24,7 +24,7 @@ def generate_intel(file, passed_end=False):
         if passed_end: f.write(random.choice(['A ', 'B ']) + str(random.randrange(10, 250)) + '\n')
 
 
-class TestCollection(unittest.TestCase):
+class TestQuidditch(unittest.TestCase):
     def test_exist(self):
         self.assertTrue(hasattr(quidditch, 'referee'), _("You did not name the method as expected."))
 

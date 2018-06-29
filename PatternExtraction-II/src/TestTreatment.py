@@ -39,7 +39,20 @@ class TestExtractor(unittest.TestCase):
         for e in a:
             stu_ans = treatment.treatment(e)
             corr_ans = corr.treatment(e)
-            self.assertEqual(equal_string(corr_ans), equal_string(stu_ans), ans.format(e, corr_ans, stu_ans))
+            self.assertEqual(equal_string(corr_ans), equal_string(stu_ans.strip()), ans.format(e, corr_ans, stu_ans))
+
+    def test_ending_space(self):
+        a = generate_intel()
+        ans = _("You should pay attention to the ending space of your answer.")
+        stu_ans = treatment.treatment(a)
+        corr_ans = corr.treatment(a)
+        if stu_ans.strip() == corr_ans:
+            if stu_ans == corr_ans + ' ':
+                self.assertTrue(False, ans)
+            else:
+                self.assertTrue(True)
+        else:
+            self.assertEqual(equal_string(corr_ans), equal_string(stu_ans.strip()), ans.format(a, corr_ans, stu_ans))
 
 
 if __name__ == '__main__':

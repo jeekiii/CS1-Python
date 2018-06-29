@@ -27,7 +27,7 @@ def generate_intel(file):
         f.write(letter)
 
 
-class TestCollection(unittest.TestCase):
+class TestAdmission(unittest.TestCase):
     def test_exist(self):
         self.assertTrue(hasattr(admission, 'write'), _("You did not name the method as expected."))
 

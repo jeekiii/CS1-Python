@@ -1,7 +1,9 @@
 accessible: true
 author: Tanguy De Bels
 context: |-
-    The method ``average(list)`` returns the arithmetic mean of the elements contained in list, except if ``list`` is empty in which case it should return ``None``.
+    In programming, one of the first exercise asked for practice is to calculate the sum of the ``n`` first positive integers. It is to illustrate the capacity to repeat a process easily and with a few lines of computers.
+
+    To do so, use a ``for`` loop with a range.
 
     .. raw:: html
 
@@ -10,10 +12,6 @@ context: |-
            setTimeout(function() {
            window.parent.postMessage({height: document.body.scrollHeight}, "*");
         }, 0);
-
-        $(window).resize(function(){
-            window.parent.postMessage({height: document.body.scrollHeight}, "*");
-        });
        })
        </script>
 environment: default
@@ -21,23 +19,22 @@ evaluate: best
 groups: false
 input_random: '0'
 limits:
+    output: '2'
     memory: '100'
     time: '30'
-    output: '2'
-name: 'Session 4: Average'
+name: 'Session 1: Sum'
 network_grading: false
-order: 16
+order: 2
 problems:
     q1:
+        header: |-
+            .. code-block:: python
+
+                x = ... #the number
+                result = ... #store in this variable the sum of the x first positive integers
         type: code
         language: python
         name: Implementation
-        header: |-
-            Provide the body of the following method:
-
-            .. code-block:: python
-
-                def average(list):
 stored_submissions: 0
 submission_limit:
     amount: -1

@@ -4,13 +4,15 @@
 
 def treatment(data):
     pattern = ""
-    current = data.split()[0]
+    inp = data.split()
+    current = inp[0]
     count = 0
-    for c in data.split():
-        if c == current:
+    for i in range(len(inp)):
+        if inp[i] == current and i < len(inp):
             count += 1
         else:
             pattern += current + '*' + str(count) + ' '
             count = 1
-            current = c
+            current = inp[i]
+    pattern += current + '*' + str(count)
     return pattern

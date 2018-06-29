@@ -27,7 +27,7 @@ def generate_intel(file, winners=False):
                 f.write(random.choice(students) + ' ' + str(random.randrange(10, 70)) + '\n')
 
 
-class TestCollection(unittest.TestCase):
+class TestHouseCup(unittest.TestCase):
     def test_exist(self):
         self.assertTrue(hasattr(houseCup, 'winning_house'), _("You did not name the method as expected."))
 

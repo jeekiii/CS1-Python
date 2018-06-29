@@ -9,7 +9,7 @@ from unittest import TestSuite, TestLoader, TextTestRunner
 
 language = sys.argv[1]
 try:    
-    trad = gettext.GNUTranslations(open("../../course/common_student/$i18n/" + language + ".mo", "rb"))
+    trad = gettext.GNUTranslations(open("../../course/common/student/$i18n/" + language + ".mo", "rb"))
 except FileNotFoundError:
     trad = gettext.NullTranslations()
 trad.install()

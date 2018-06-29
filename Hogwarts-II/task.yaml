@@ -7,7 +7,7 @@ context: |-
 
     However, the old hat got a bit too far and meets now some performance issues. It is voiceless and won't be up to the task for the next part of the ceremony. Luckily enough we still have access to the founders' knowledge and we will be able to sort the students with your help.
 
-    Create a function ``house_designation(student_qualities)`` that will return the name of the house a student should be attributed to. To decide his attribution, you should move him in the house in which he has the most affinities. If two houses shall be equals, return the first one in the given knowledge.
+    Create a function ``house_designation(student_qualities)`` that will return a list with the names of the houses from the one a student should be attributed to to the last one he sould go to. To decide his attribution, you should move him in the house in which he has the most affinities. If two houses shall be equals, return the first one in the given knowledge.
 
     .. raw:: html
 

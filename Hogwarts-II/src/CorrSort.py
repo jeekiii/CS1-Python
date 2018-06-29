@@ -8,10 +8,14 @@ knowledge = [['Gryffindor', ['brave', 'strong', 'bold']],
 
 def house_designation(student_qualities):
     ranking = []
-    for list in knowledge:
+    for lst in knowledge:
         count = 0
         for q in student_qualities:
-            if q in list[1]:
+            if q in lst[1]:
                 count += 1
         ranking.append(count)
-    return knowledge[ranking.index(max(ranking))][0]
+    ans = []
+    for _ in range(4):
+        ans.append(knowledge[ranking.index(max(ranking))][0])
+        ranking[ranking.index(max(ranking))] = -1
+    return ans
