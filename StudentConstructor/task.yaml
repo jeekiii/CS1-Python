@@ -4,10 +4,15 @@ context: |-
     In this exercise, you're asked to provide a class *Student*.
 
     The students are supposed to have the following characteristics:
+
     * A firstname
+
     * A surname
+
     * A birth date
+
     * An email address
+
     * A student number (different for every student and given at the creation of the object)
 
     The object, when cast as a **string** should return for example:
