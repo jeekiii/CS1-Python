@@ -28,10 +28,8 @@ class TestStudent(unittest.TestCase):
         ans = _("With the following data: {}, {}, {}, {} for the student created, you returned {} instead of {}")
         stu_ans = student.Student(name, surname, birthdate, email)
         corr_ans = corr.Student(name, surname, birthdate, email)
-        self.assertEqual(equal_string(str(corr_ans)), equal_string(str(stu_ans)), ans.format(name, surname,
-                                                                                                 birthdate,
-                                                                                                 email, stu_ans,
-                                                                                                 corr_ans))
+        self.assertEqual(equal_string(str(corr_ans)), equal_string(str(stu_ans)), ans.format(name, surname, birthdate,
+                                                                                             email, stu_ans, corr_ans))
 
     def test_multi_student(self):
         names = [''.join(random.choice(string.ascii_letters) for _ in range(8)) for _ in range(5)]
