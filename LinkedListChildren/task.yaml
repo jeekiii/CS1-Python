@@ -22,7 +22,7 @@ limits:
     time: '30'
     memory: '100'
     output: '2'
-name: Session 11 : Lost Children
+name: 'Session 11 : Lost Children'
 network_grading: false
 order: 0
 problems:
