@@ -1,0 +1,44 @@
+accessible: true
+author: Simon Gustin
+context: |-
+    You are a programmer and want to say hello to the user of your program. The user's name is stored in a variable called ``name`` and you want to store your greeting in a variable called ``hello``.
+    This string will have the following form: "Hello, ``name``!"
+    
+    For example, if ``name`` is assigned "Charles", your code would put "Hello, Charles!" in the variable ``hello``.
+
+    .. raw:: html
+
+       <script defer>
+       $(document).ready(function(){
+           setTimeout(function() {
+           window.parent.postMessage({height: document.body.scrollHeight}, "*");
+        }, 0);
+
+        $(window).resize(function(){
+            window.parent.postMessage({height: document.body.scrollHeight}, "*");
+        });
+       })
+       </script>
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    memory: '100'
+    time: '30'
+    output: '2'
+name: 'Session 1: Hello'
+network_grading: false
+order: 0
+problems:
+    q1:
+        type: code
+        language: python
+        name: Implementation
+        header: Store your greeting string in ``hello`` (with ``name`` the user's name)
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0
