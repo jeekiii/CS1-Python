@@ -37,8 +37,8 @@ problems:
           .. code-block:: python
 
               class Child:
-                  def is_next_valid() #return a boolean
-                  def next_child() #return a Child
+                  def is_next_valid()  #return a boolean
+                  def next_child()     #return a Child
 
 
           Don't forget to stop checking once you have checked every children.
