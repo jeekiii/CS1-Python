@@ -7,7 +7,7 @@ class Child:
         self.next = None
 
     def is_next_valid(self):
-        return self.next is None
+        return self.next is not None
 
     def next_child(self):
         return self.next

@@ -2,6 +2,7 @@ accessible: true
 author: Damien Gonze
 context: |-
     You are the manager of a vacation camp. To make sure you don't lose any children in your visit of a local forest, every children must look to a buddy, which will look to another buddy, etc. Until every children has a buddy and is the buddy of someone.
+
     You are sure that if you take a children, and follow the trail of buddies, you will visit all children.
     To check if every child is here, you just need to check that every children has his buddy, and check that for all children.
 
