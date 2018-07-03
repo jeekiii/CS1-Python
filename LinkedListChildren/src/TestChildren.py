@@ -6,7 +6,7 @@ import random
 import timeout_decorator
 
 import CorrChildren as corr
-import main
+import child
 
 
 class TestChildren(unittest.TestCase):
@@ -20,7 +20,7 @@ class TestChildren(unittest.TestCase):
         node1.next = node2 # 12->99
         node2.next = node3 # 99->37
         node3.next = node1
-        self.assertEqual(True, main.is_every_child_here(node1),  msg="Well... You got it wrong, so try again.");
+        self.assertEqual(True, child.is_every_child_here(node1),  msg="Well... You got it wrong, so try again.");
 
 
 
@@ -33,7 +33,7 @@ class TestChildren(unittest.TestCase):
         node3 = corr.Child()
         node1.next = node2 # 12->99
         node2.next = node3 # 99->37
-        self.assertEqual(False, main.is_every_child_here(node1),  msg="Well... You got it wrong, so try again.");
+        self.assertEqual(False, child.is_every_child_here(node1),  msg="Well... You got it wrong, so try again.");
 
         
 if __name__ == '__main__':
