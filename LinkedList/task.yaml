@@ -1,0 +1,46 @@
+accessible: true
+author: Jacob Eliat-Eliat
+context: |-
+
+    Create a class LinkedList that has an "add" method which takes a value as parameter, and a "get_reverse" method which returns the values of the linked list in reverse order.
+
+    If the "add" method is called like this:
+      add("first")
+      add("second")
+      add("third")
+    then "get_reverse()" should return "thirdsecondfirst"
+
+    .. raw:: html
+
+       <script defer>
+       $(document).ready(function(){
+           setTimeout(function() {
+           window.parent.postMessage({height: document.body.scrollHeight}, "*");
+        }, 0);
+       })
+       </script>
+environment: default
+evaluate: best
+groups: false
+input_random: '0'
+limits:
+    output: '2'
+    memory: '100'
+    time: '30'
+name: 'Session 11: LinkedList'
+network_grading: false
+order: 32
+problems:
+    q1:
+
+        type: code
+        language: python
+        name: Implementation
+        header: |-
+            Implement the class LinkedList with add and get_reverse functions, use a Node class with getNext and getValue 
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+weight: 1.0
