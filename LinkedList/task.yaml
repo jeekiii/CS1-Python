@@ -10,6 +10,7 @@ context: |-
       add("third")
     then "get_reverse()" should return "thirdsecondfirst"
 
+    Use another class "Node" with at least the methods "get_value" and "get_next" 
     .. raw:: html
 
        <script defer>
@@ -37,7 +38,7 @@ problems:
         language: python
         name: Implementation
         header: |-
-            Implement the class LinkedList with add and get_reverse functions, use a Node class with getNext and getValue 
+            Implement the class LinkedList with add and get_reverse functions, use a Node class with getNext and getValue
 stored_submissions: 0
 submission_limit:
     amount: -1

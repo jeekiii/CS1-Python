@@ -4,14 +4,12 @@ class Node:
     def __init__(self, next, value):
         self.next = next
         self.value = value
-    def getNext(self):
+    def get_next(self):
         return self.next
-    def getValue(self):
+    def get_value(self):
         return self.value
 
 class LinkedList:
-
-
     def __init__(self):
         self.root = None
     def add(self, value):
@@ -24,6 +22,6 @@ class LinkedList:
         res = ""
         node = self.root
         while(node != None):
-            res += str(node.getValue())
-            node = node.getNext()
+            res += str(node.get_value())
+            node = node.get_next()
         return res

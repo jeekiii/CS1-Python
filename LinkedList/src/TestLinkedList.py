@@ -25,7 +25,7 @@ class TestList(unittest.TestCase):
         self.assertTrue(hasattr(linkedlist.LinkedList, 'add') and hasattr(linkedlist.LinkedList, 'get_reverse'),
                         _("You did not provide the required methods"))
         self.assertTrue(hasattr(linkedlist, 'Node'), _("You did not provide the Node class"))
-        self.assertTrue(hasattr(linkedlist.Node, 'getNext') and hasattr(linkedlist.Node, 'getValue'),
+        self.assertTrue(hasattr(linkedlist.Node, 'get_next') and hasattr(linkedlist.Node, 'get_value'),
                         _("You did not provide the required methods in the Node class"))
     def test_empty(self):
         a = ""
