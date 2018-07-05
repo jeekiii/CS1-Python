@@ -10,15 +10,6 @@ import CorrLinkedList as corr
 import linkedlist
 
 
-def list_generator():
-    res = []
-    array_length = random.randint(1, 10)
-    for i in range(array_length):
-        string_length = random.randint(1, 10)
-        res.append(''.join(random.choice(string.ascii_letters + string.digits) for i in range(string_length)))
-    return res
-
-
 class TestList(unittest.TestCase):
     def test_exist(self):
         self.assertTrue(hasattr(linkedlist, 'LinkedList'), _("You did not provide the LinkedList class"))
