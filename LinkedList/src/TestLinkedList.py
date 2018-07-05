@@ -27,6 +27,7 @@ class TestList(unittest.TestCase):
         self.assertTrue(hasattr(linkedlist, 'Node'), _("You did not provide the Node class"))
         self.assertTrue(hasattr(linkedlist.Node, 'get_next') and hasattr(linkedlist.Node, 'get_value'),
                         _("You did not provide the required methods in the Node class"))
+        
     def test_empty(self):
         a = ""
         ans = _("When adding nothing get_reverse is supposed to return an empty string and you returned {}. \n You should watch you behaviour in case of empty lists.")
@@ -38,7 +39,7 @@ class TestList(unittest.TestCase):
             self.assertEqual(corr_ans, stu_ans, ans.format(stu_ans))
 
     def test_reverse(self):
-        randomList = list_generator()
+        randomList = [''.join(random.choice(string.ascii_letters + string.digits) for _ in range(random.randint(1, 10))) for _ in range(random.randint(1, 10))]
         ans = _("The answer should be {} and you returned {}.")
         stu_list = linkedlist.LinkedList()
         corr_list = corr.LinkedList()
